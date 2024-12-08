@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-black text-gray-300">
+
+    <!-- Header -->
+    <header class="text-center w-full p-4 shadow">
+        <h1 id="page-heading" class="font-bold">Team</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div id="level-boxes" class="w-11/12 mx-auto">
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Level 1 -->
+            <div class="bg-gradient-to-b to-gray-900 pt-2 pb-4 px-4 from-purple-800 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="text-lg text-gray-400 font-semibold">Level 1</p>
+                    <button class="text-xs px-3 bg-gradient-to-r to-gray-700 from-gray-900 rounded-full open-btn" data-target="#level1-content" data-heading="Level 1 Details">Open</button>
+                </div>
+                <div class="flex justify-between mt-3">
+                    <div>
+                        <p class="text-sm text-gray-400">Register Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400">Valid Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="bg-gradient-to-b to-gray-900 pt-2 pb-4 px-4 from-blue-800 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="text-lg text-gray-400 font-semibold">Level 2</p>
+                    <button class="text-xs px-3 bg-gradient-to-r to-gray-700 from-gray-900 rounded-full open-btn" data-target="#level2-content" data-heading="Level 2 Details">Open</button>
+                </div>
+                <div class="flex justify-between mt-3">
+                    <div>
+                        <p class="text-sm text-gray-400">Register Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400">Valid Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="bg-gradient-to-b to-gray-900 pt-2 pb-4 px-4 from-pink-800 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="text-lg text-gray-400 font-semibold">Level 3</p>
+                    <button class="text-xs px-3 bg-gradient-to-r to-gray-700 from-gray-900 rounded-full open-btn" data-target="#level3-content" data-heading="Level 3 Details">Open</button>
+                </div>
+                <div class="flex justify-between mt-3">
+                    <div>
+                        <p class="text-sm text-gray-400">Register Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400">Valid Members</p>
+                        <h1 class="text-xl font-semibold tracking-wider">30</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content for Each Level -->
+    <div id="level1-content" class="hidden  mx-auto">
+       <div class="w-11/12 mx-auto">
+        <button id="back-btn-1" class="  text-xs px-4 py-1 bg-gradient-to-b to-purple-900 from-gray-900 rounded-full mb-4">Back</button>
+       </div>
+      <span id="noData" class="text-white z-99 text-center mt-12 text-gray-500">No Data</span>
+      <div class=" record-box w-11/12 flex justify-between items-center text-lg  border border-gray-800 mx-auto rounded-lg  mb-3  px-3 py-3" >     
+        <div class="flex gap-3">
+          <div class="bg-gray-900 p-1 rounded-lg ">
+            <img src="https://img.icons8.com/nolan/512/user-male-circle.png" alt="Logo" width="30" >
+          </div>
+          <div class=" flex flex-col gap- justify-center ">
+            <h1 class="text-sm">8876543210</h1>
+            <p class="text-gray-400 text-xs">27/01/2004 8:13pm</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end">
+         <p class="text-sm tracking-wider">₹3000<span>.00</span></p>
+       
+        </div>  
+      </div>   
+       
+    </div>
+
+    <div id="level2-content" class="hidden">
+      <div class="w-11/12 mx-auto">
+        <button id="back-btn-2" class="  text-xs px-4 py-1 bg-gradient-to-b to-purple-900 from-gray-900 rounded-full mb-4">Back</button>
+       </div>
+       <span id="noData1" class="text-white z-99 text-center mt-12 text-gray-500">No Data</span>
+       <div class=" record-box1 w-11/12 flex justify-between items-center text-lg  border border-gray-800 mx-auto rounded-lg  mb-3  px-3 py-3" >     
+        <div class="flex gap-3">
+          <div class="bg-gray-900 p-1 rounded-lg ">
+            <img src="https://img.icons8.com/nolan/512/user-male-circle.png" alt="Logo" width="30" >
+          </div>
+          <div class=" flex flex-col gap- justify-center ">
+            <h1 class="text-sm">7876543210</h1>
+            <p class="text-gray-400 text-xs">27/01/2004 8:13pm</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end">
+         <p class="text-sm tracking-wider">₹3000<span>.00</span></p>
+       
+        </div>  
+      </div>
+    </div>
+
+    <div id="level3-content" class="hidden">
+      <div class="w-11/12 mx-auto">
+        <button id="back-btn-3" class="  text-xs px-4 py-1 bg-gradient-to-b to-purple-900 from-gray-900 rounded-full mb-4">Back</button>
+       </div>
+       <span id="noData3" class="text-white z-99 text-center mt-12 text-gray-500">No Data</span>
+       <div class=" record-box3 w-11/12 flex justify-between items-center text-lg  border border-gray-800 mx-auto rounded-lg  mb-3  px-3 py-3" >     
+        <div class="flex gap-3">
+          <div class="bg-gray-900 p-1 rounded-lg ">
+            <img src="https://img.icons8.com/nolan/512/user-male-circle.png" alt="Logo" width="30" >
+          </div>
+          <div class=" flex flex-col gap- justify-center ">
+            <h1 class="text-sm">6876543210</h1>
+            <p class="text-gray-400 text-xs">27/01/2004 8:13pm</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-end">
+         <p class="text-sm tracking-wider">₹3000<span>.00</span></p>
+       
+        </div>  
+      </div>
+    </div>
+     
+    <!-- Fixed Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg text-center flex justify-between px-4 py-2 text-xs border-t border-blue-700">
+  <div class="flex flex-col items-center">
+      <img width="30" height="30" src="https://img.icons8.com/nolan/512/home-page.png" alt="Home" />
+      <p class="mt-1">Home</p>
+  </div>
+  <div class="flex flex-col items-center">
+      <img width="30" height="30" src="https://img.icons8.com/nolan/512/coin-wallet.png" alt="Wallet" />
+      <p class="mt-1">Wallet</p>
+  </div>
+  <div class="flex flex-col items-center">
+      <img width="30" height="30" src="https://img.icons8.com/nolan/64/share-2.png" alt="Invite" />
+      <p class="mt-1">Invite</p>
+  </div>
+  <div class="flex flex-col items-center">
+      <img width="30" height="30" src="https://img.icons8.com/nolan/64/user-group-man-woman.png" alt="Team" />
+      <p class="mt-1">Team</p>
+  </div>
+  <div class="flex flex-col items-center">
+      <img width="30" height="30" src="https://img.icons8.com/nolan/512/user-default.png" alt="Mine" />
+      <p class="mt-1">Mine</p>
+  </div>
+</nav>
+
+    <script>
+        $(document).ready(function () {
+            // Check localStorage to load the correct section
+            const savedState = localStorage.getItem("currentLevel");
+            if (savedState) {
+                // Hide main content and show the saved section
+                $("#level-boxes").addClass("hidden");
+                $(savedState).removeClass("hidden");
+
+                // Update the header
+                const savedHeading = localStorage.getItem("currentHeading");
+                $("#page-heading").text(savedHeading);
+            }
+
+            $(".open-btn").click(function () {
+                // Hide the main level boxes
+                $("#level-boxes").addClass("hidden");
+
+                // Show the selected content section
+                const target = $(this).data("target");
+                const heading = $(this).data("heading");
+                $(target).removeClass("hidden");
+
+                // Update the header
+                $("#page-heading").text(heading);
+
+                // Save the state to localStorage
+                localStorage.setItem("currentLevel", target);
+                localStorage.setItem("currentHeading", heading);
+            });
+
+            // Add click event for back buttons
+            $("#back-btn-1, #back-btn-2, #back-btn-3").click(function () {
+                // Hide all content sections
+                $("#level1-content, #level2-content, #level3-content").addClass("hidden");
+
+                // Show the main level boxes
+                $("#level-boxes").removeClass("hidden");
+
+                // Reset the header
+                $("#page-heading").text("Team");
+
+                // Clear the state in localStorage
+                localStorage.removeItem("currentLevel");
+                localStorage.removeItem("currentHeading");
+            });
+        });
+
+        //  no data show 
+        //  level1
+        // nodata code
+       const noData = document.getElementById("noData");
+       const recordContainer = document.getElementsByClassName("record-box");
+
+       if (recordContainer.length === 0) {
+        noData.style.display = "block";
+        
+       } else {
+        noData.style.display = "none";
+       
+       }
+         // end
+
+           //  no data show 
+        //  level2
+        // nodata code
+       const noData1 = document.getElementById("noData1");
+       const recordContainer1 = document.getElementsByClassName("record-box1");
+
+       if (recordContainer1.length === 0) {
+        noData1.style.display = "block";
+        
+       } else {
+        noData1.style.display = "none";
+       
+       }
+         // end
+
+           //  no data show 
+        //  level2
+        // nodata code
+       const noData3 = document.getElementById("noData3");
+       const recordContainer3 = document.getElementsByClassName("record-box3");
+
+       if (recordContainer3.length === 0) {
+        noData3.style.display = "block";
+        
+       } else {
+        noData3.style.display = "none";
+       
+       }
+         // end
+
+
+    </script>
+</body>
+</html>
